@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/music-player/static/css/main.2db80502.chunk.css",
+    "main.js": "/music-player/static/js/main.e5c5829f.chunk.js",
+    "main.js.map": "/music-player/static/js/main.e5c5829f.chunk.js.map",
+    "runtime-main.js": "/music-player/static/js/runtime-main.ba2134ff.js",
+    "runtime-main.js.map": "/music-player/static/js/runtime-main.ba2134ff.js.map",
+    "static/js/2.9de570b9.chunk.js": "/music-player/static/js/2.9de570b9.chunk.js",
+    "static/js/2.9de570b9.chunk.js.map": "/music-player/static/js/2.9de570b9.chunk.js.map",
+    "static/js/3.95d88d7f.chunk.js": "/music-player/static/js/3.95d88d7f.chunk.js",
+    "static/js/3.95d88d7f.chunk.js.map": "/music-player/static/js/3.95d88d7f.chunk.js.map",
+    "index.html": "/music-player/index.html",
+    "static/css/main.2db80502.chunk.css.map": "/music-player/static/css/main.2db80502.chunk.css.map",
+    "static/js/2.9de570b9.chunk.js.LICENSE.txt": "/music-player/static/js/2.9de570b9.chunk.js.LICENSE.txt",
+    "static/media/maad_city.2dae5c65.png": "/music-player/static/media/maad_city.2dae5c65.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ba2134ff.js",
+    "static/js/2.9de570b9.chunk.js",
+    "static/css/main.2db80502.chunk.css",
+    "static/js/main.e5c5829f.chunk.js"
+  ]
+}
