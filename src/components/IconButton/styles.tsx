@@ -5,8 +5,8 @@ interface IContainerProps {
 }
 
 export const Container = styled.div<IContainerProps>`
-  width: ${({ width }) => (width ? `${width}px` : "48px")};
-  height: ${({ width }) => (width ? `${width}px` : "48px")};
+  width: ${({ width }) => (width ? `${width}px` : "42px")};
+  height: ${({ width }) => (width ? `${width}px` : "42px")};
   display: flex;
   justify-content: center;
   align-items: center;

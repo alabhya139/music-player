@@ -46,7 +46,7 @@ export const CoverArt = styled.img`
 `;
 
 export const SongInfoSection = styled.div`
-  width: calc(50% - 45px);
+  width: calc(46% - 45px);
   padding: 0 45px;
 `;
 
@@ -115,11 +115,11 @@ export const StyledFavouriteIcon = styled(FavoriteIcon)<IIconProps>`
     transform: scale(1.1);
     transition: transform 500ms ease-in;
   }
-  color: ${({ active }) => (active ? `#5F30C1` : `#c7c5d0`)};
+  color: ${({ active }) => (active ? `#7e74ed` : `#c7c5d0`)};
 `;
 
 export const StyledPlaylistAddIcon = styled(PlaylistAddIcon)<IIconProps>`
-  color: ${({ active }) => (active ? `#5F30C1` : `#c7c5d0`)};
+  color: ${({ active }) => (active ? `#7e74ed` : `#c7c5d0`)};
   cursor: pointer;
   &:hover {
     transform: scale(1.1);
@@ -128,7 +128,7 @@ export const StyledPlaylistAddIcon = styled(PlaylistAddIcon)<IIconProps>`
 `;
 
 export const StyledShareIcon = styled(ShareIcon)<IIconProps>`
-  color: ${({ active }) => (active ? `#5F30C1` : `#c7c5d0`)};
+  color: ${({ active }) => (active ? `#7e74ed` : `#c7c5d0`)};
   cursor: pointer;
   &:hover {
     transform: scale(1.1);
