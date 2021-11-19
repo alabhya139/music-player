@@ -19,6 +19,7 @@ export const Container = styled.div`
   display: flex;
   padding: 50px;
   z-index: 2;
+  position: relative;
 `;
 
 export const CoverSection = styled.div`
@@ -132,5 +133,20 @@ export const StyledShareIcon = styled(ShareIcon)<IIconProps>`
   &:hover {
     transform: scale(1.1);
     transition: transform 500ms ease-in;
+  }
+`;
+
+export const ControlsToggle = styled.div`
+  width: 5px;
+  height: 80px;
+  background: #e1deea;
+  border-radius: 13px;
+  position: absolute;
+  right: 16px;
+  top: calc(50% - 40px);
+  cursor: pointer;
+  transition: background 100ms ease-in-out;
+  &:hover {
+    background: #cdc9d8;
   }
 `;

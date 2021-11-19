@@ -13,7 +13,9 @@ import {
   StyledFavouriteIcon,
   StyledPlaylistAddIcon,
   StyledShareIcon,
+  ControlsToggle,
 } from "./styles";
+import { useAudioPlayerContext } from "../AudioPlayerContext/context";
 
 interface IMusicCoverProps {
   coverArtSrc: string;
@@ -34,6 +36,12 @@ function MusicCover({
   const [isPlaylistAddActive, setPlaylistAddActive] = useState<boolean>(false);
   const [isShareActive, setShareActive] = useState<boolean>(false);
 
+  const { isActionEnabled, setActionEnabled } = useAudioPlayerContext();
+
+  const toggleControls = () => {
+    setActionEnabled((prevState) => !prevState);
+  };
+
   const favouriteHandler = () => {
     setFavouriteActive((prevState) => !prevState);
   };
@@ -48,6 +56,7 @@ function MusicCover({
 
   return (
     <Container>
+      {!isActionEnabled && <ControlsToggle onClick={toggleControls} />}
       <CoverSection>
         <CoverArt src={coverArtSrc} />
       </CoverSection>
