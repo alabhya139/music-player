@@ -1,12 +1,12 @@
 import MAAD_CITY from "../assets/images/maad_city.png";
 import SECTION_80 from "../assets/images/Section_80.jpg";
 import KOD from "../assets/images/kod.jpeg";
-import BORN_SINNER from "../assets/images/born_sinner.jpg";
+import BORN_SINNER from "../assets/images/born_sinner.jpeg";
 
-const MAAD_CITY_MP3 = require("../assets/tracks/money_trees.mp3");
-const SECTION_80_MP3 = require("../assets/tracks/hiiipower.mp3");
-const KOD_MP3 = require("../assets/tracks/brackets.mp3");
-const BORN_SINNER_MP3 = require("../assets/tracks/land_of_snakes.mp3");
+import MAAD_CITY_MP3 from "../assets/tracks/money_trees.mp3";
+import SECTION_80_MP3 from "../assets/tracks/hiiipower.mp3";
+import KOD_MP3 from "../assets/tracks/brackets.mp3";
+import BORN_SINNER_MP3 from "../assets/tracks/land_of_snakes.mp3";
 
 export const tracks = [
     {

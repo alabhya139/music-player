@@ -7,6 +7,7 @@ import RepeatOneRoundedIcon from "@mui/icons-material/RepeatOneRounded";
 import RepeatRoundedIcon from "@mui/icons-material/RepeatRounded";
 import ShuffleRoundedIcon from "@mui/icons-material/ShuffleRounded";
 import EqualizerRoundedIcon from "@mui/icons-material/EqualizerRounded";
+import PlayArrowRoundedIcon from "@mui/icons-material/PlayArrowRounded";
 
 import Slider from "@mui/material/Slider";
 
@@ -24,7 +25,7 @@ export const Container = styled.div<IContainerProps>`
   border-radius: 60px;
   margin-left: ${({ isActionEnabled }) =>
     isActionEnabled ? "-48px" : "-44vw"};
-  transition: margin 500ms ease-in-out;
+  transition: margin 300ms ease-in-out;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -38,10 +39,11 @@ export const AudioAction = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 80%;
 `;
 
 export const LeftSection = styled.div`
-  margin-right: 48px;
+  margin-right: 24px;
 `;
 
 export const CenterSection = styled.div`
@@ -50,7 +52,7 @@ export const CenterSection = styled.div`
 `;
 
 export const RightSection = styled.div`
-  margin-left: 48px;
+  margin-left: 24px;
 `;
 
 export const AudioSeek = styled.div`
@@ -90,7 +92,24 @@ export const StyledPauseIcon = styled(PauseRoundedIcon)`
   color: #ffffff;
   border-radius: 60px;
   &.MuiSvgIcon-root {
-    font-size: 32px;
+    font-size: 38px;
+    padding: 8px;
+  }
+  cursor: pointer;
+`;
+
+export const StyledPlayIcon = styled(PlayArrowRoundedIcon)`
+  background: linear-gradient(
+    159.16deg,
+    #7e74ed 26.46%,
+    rgba(63, 45, 137, 0) 116.55%
+  );
+  box-shadow: inset 10px 10px 15px rgba(255, 255, 255, 0.2);
+  filter: drop-shadow(0px 5px 10px #372e98);
+  color: #ffffff;
+  border-radius: 60px;
+  &.MuiSvgIcon-root {
+    font-size: 38px;
     padding: 8px;
   }
   cursor: pointer;
@@ -107,7 +126,7 @@ export const StyledChevronLeftIcon = styled(ChevronLeftRoundedIcon)`
   color: #ffffff;
   border-radius: 60px;
   &.MuiSvgIcon-root {
-    font-size: 24px;
+    font-size: 28px;
     padding: 2px;
   }
   cursor: pointer;
@@ -125,7 +144,7 @@ export const StyledChevronRightIcon = styled(ChevronRightRoundedIcon)`
   font-weight: 800;
   border-radius: 60px;
   &.MuiSvgIcon-root {
-    font-size: 24px;
+    font-size: 28px;
     padding: 2px;
 
     path {
