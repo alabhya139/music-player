@@ -44,13 +44,13 @@ function Controls() {
   const togglePlay = () => {
     setIsPlaying((prevState) => !prevState);
   };
-  const currentDuration = `${new Date(trackProgress * 1000)
+  const currentDuration = new Date(trackProgress * 1000)
     .toISOString()
-    .substr(14, 5)}:00`;
+    .substr(14, 5);
   const totalDuration =
     duration > 0
-      ? `${new Date(duration * 1000).toISOString().substr(14, 5)}:00`
-      : "00:00:00";
+      ? new Date(duration * 1000).toISOString().substr(14, 5)
+      : "00:00";
   return (
     <Container isActionEnabled={isActionEnabled}>
       <ControlsToggle onClick={toggleControls} />
@@ -91,6 +91,7 @@ function Controls() {
             onKeyUp={onScrubEnd}
             onMouseUp={onScrubEnd}
             value={currentPercentage}
+            valueLabelFormat={currentDuration}
           />
         </AudioSeekControl>
         <AudioSeekTimer>
