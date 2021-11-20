@@ -19,6 +19,7 @@ export const Container = styled.div`
   display: flex;
   padding: 50px;
   z-index: 2;
+  position: relative;
 `;
 
 export const CoverSection = styled.div`
@@ -45,7 +46,7 @@ export const CoverArt = styled.img`
 `;
 
 export const SongInfoSection = styled.div`
-  width: calc(50% - 45px);
+  width: calc(46% - 45px);
   padding: 0 45px;
 `;
 
@@ -114,11 +115,11 @@ export const StyledFavouriteIcon = styled(FavoriteIcon)<IIconProps>`
     transform: scale(1.1);
     transition: transform 500ms ease-in;
   }
-  color: ${({ active }) => (active ? `#5F30C1` : `#c7c5d0`)};
+  color: ${({ active }) => (active ? `#7e74ed` : `#c7c5d0`)};
 `;
 
 export const StyledPlaylistAddIcon = styled(PlaylistAddIcon)<IIconProps>`
-  color: ${({ active }) => (active ? `#5F30C1` : `#c7c5d0`)};
+  color: ${({ active }) => (active ? `#7e74ed` : `#c7c5d0`)};
   cursor: pointer;
   &:hover {
     transform: scale(1.1);
@@ -127,10 +128,25 @@ export const StyledPlaylistAddIcon = styled(PlaylistAddIcon)<IIconProps>`
 `;
 
 export const StyledShareIcon = styled(ShareIcon)<IIconProps>`
-  color: ${({ active }) => (active ? `#5F30C1` : `#c7c5d0`)};
+  color: ${({ active }) => (active ? `#7e74ed` : `#c7c5d0`)};
   cursor: pointer;
   &:hover {
     transform: scale(1.1);
     transition: transform 500ms ease-in;
+  }
+`;
+
+export const ControlsToggle = styled.div`
+  width: 5px;
+  height: 80px;
+  background: #e1deea;
+  border-radius: 13px;
+  position: absolute;
+  right: 16px;
+  top: calc(50% - 40px);
+  cursor: pointer;
+  transition: background 100ms ease-in-out;
+  &:hover {
+    background: #cdc9d8;
   }
 `;
