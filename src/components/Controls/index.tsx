@@ -21,13 +21,36 @@ import {
   StyledRepeatRoundedIcon,
   StyledShuffleRoundedIcon,
   StyledEqualizerRoundedIcon,
+  StyledPlayIcon,
 } from "./styles";
 
 function Controls() {
-  const { setActionEnabled, isActionEnabled } = useAudioPlayerContext();
+  const {
+    setActionEnabled,
+    isActionEnabled,
+    isPlaying,
+    setIsPlaying,
+    toPrevTrack,
+    toNextTrack,
+    onScrub,
+    onScrubEnd,
+    currentPercentage,
+    trackProgress,
+    duration,
+  } = useAudioPlayerContext();
   const toggleControls = () => {
     setActionEnabled((prevState) => !prevState);
   };
+  const togglePlay = () => {
+    setIsPlaying((prevState) => !prevState);
+  };
+  const currentDuration = `${new Date(trackProgress * 1000)
+    .toISOString()
+    .substr(14, 5)}:00`;
+  const totalDuration =
+    duration > 0
+      ? `${new Date(duration * 1000).toISOString().substr(14, 5)}:00`
+      : "00:00:00";
   return (
     <Container isActionEnabled={isActionEnabled}>
       <ControlsToggle onClick={toggleControls} />
@@ -37,13 +60,17 @@ function Controls() {
           <StyledRepeatOneRoundedIcon />
         </LeftSection>
         <CenterSection>
-          <IconButton width={40} onClickHandler={() => {}}>
+          <IconButton width={44} onClickHandler={toPrevTrack}>
             <StyledChevronLeftIcon />
           </IconButton>
-          <IconButton width={64} onClickHandler={() => {}}>
-            <StyledPauseIcon fontSize="large" />
+          <IconButton width={72} onClickHandler={togglePlay}>
+            {isPlaying ? (
+              <StyledPauseIcon fontSize="large" />
+            ) : (
+              <StyledPlayIcon fontSize="large" />
+            )}
           </IconButton>
-          <IconButton width={40} onClickHandler={() => {}}>
+          <IconButton width={44} onClickHandler={toNextTrack}>
             <StyledChevronRightIcon />
           </IconButton>
         </CenterSection>
@@ -56,14 +83,19 @@ function Controls() {
         <AudioSeekControl>
           <StyledSlider
             size="medium"
-            defaultValue={70}
             aria-label="Small"
             valueLabelDisplay="auto"
+            onChange={(_, value) => {
+              onScrub(value as number);
+            }}
+            onKeyUp={onScrubEnd}
+            onMouseUp={onScrubEnd}
+            value={currentPercentage}
           />
         </AudioSeekControl>
         <AudioSeekTimer>
-          <CurrentPlayTime>2:01:00</CurrentPlayTime>
-          <TotalPlayTime>4:16:00</TotalPlayTime>
+          <CurrentPlayTime>{currentDuration}</CurrentPlayTime>
+          <TotalPlayTime>{totalDuration}</TotalPlayTime>
         </AudioSeekTimer>
       </AudioSeek>
     </Container>
