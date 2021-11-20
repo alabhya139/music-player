@@ -1,23 +1,30 @@
 {
   "files": {
     "main.css": "/music-player/static/css/main.2db80502.chunk.css",
-    "main.js": "/music-player/static/js/main.a95885a3.chunk.js",
-    "main.js.map": "/music-player/static/js/main.a95885a3.chunk.js.map",
-    "runtime-main.js": "/music-player/static/js/runtime-main.f61ddca4.js",
-    "runtime-main.js.map": "/music-player/static/js/runtime-main.f61ddca4.js.map",
-    "static/js/2.0570a837.chunk.js": "/music-player/static/js/2.0570a837.chunk.js",
-    "static/js/2.0570a837.chunk.js.map": "/music-player/static/js/2.0570a837.chunk.js.map",
-    "static/js/3.ce41e0cf.chunk.js": "/music-player/static/js/3.ce41e0cf.chunk.js",
-    "static/js/3.ce41e0cf.chunk.js.map": "/music-player/static/js/3.ce41e0cf.chunk.js.map",
+    "main.js": "/music-player/static/js/main.856c5869.chunk.js",
+    "main.js.map": "/music-player/static/js/main.856c5869.chunk.js.map",
+    "runtime-main.js": "/music-player/static/js/runtime-main.55faeae6.js",
+    "runtime-main.js.map": "/music-player/static/js/runtime-main.55faeae6.js.map",
+    "static/js/2.e4f1146a.chunk.js": "/music-player/static/js/2.e4f1146a.chunk.js",
+    "static/js/2.e4f1146a.chunk.js.map": "/music-player/static/js/2.e4f1146a.chunk.js.map",
+    "static/js/3.52a58bdc.chunk.js": "/music-player/static/js/3.52a58bdc.chunk.js",
+    "static/js/3.52a58bdc.chunk.js.map": "/music-player/static/js/3.52a58bdc.chunk.js.map",
     "index.html": "/music-player/index.html",
     "static/css/main.2db80502.chunk.css.map": "/music-player/static/css/main.2db80502.chunk.css.map",
-    "static/js/2.0570a837.chunk.js.LICENSE.txt": "/music-player/static/js/2.0570a837.chunk.js.LICENSE.txt",
-    "static/media/maad_city.2dae5c65.png": "/music-player/static/media/maad_city.2dae5c65.png"
+    "static/js/2.e4f1146a.chunk.js.LICENSE.txt": "/music-player/static/js/2.e4f1146a.chunk.js.LICENSE.txt",
+    "static/media/Section_80.839e40ce.jpg": "/music-player/static/media/Section_80.839e40ce.jpg",
+    "static/media/born_sinner.51d39cd6.jpeg": "/music-player/static/media/born_sinner.51d39cd6.jpeg",
+    "static/media/brackets.1c1d5279.mp3": "/music-player/static/media/brackets.1c1d5279.mp3",
+    "static/media/hiiipower.fb6b4370.mp3": "/music-player/static/media/hiiipower.fb6b4370.mp3",
+    "static/media/kod.36726f7e.jpeg": "/music-player/static/media/kod.36726f7e.jpeg",
+    "static/media/land_of_snakes.b5f61f92.mp3": "/music-player/static/media/land_of_snakes.b5f61f92.mp3",
+    "static/media/maad_city.2dae5c65.png": "/music-player/static/media/maad_city.2dae5c65.png",
+    "static/media/money_trees.ff486b99.mp3": "/music-player/static/media/money_trees.ff486b99.mp3"
   },
   "entrypoints": [
-    "static/js/runtime-main.f61ddca4.js",
-    "static/js/2.0570a837.chunk.js",
+    "static/js/runtime-main.55faeae6.js",
+    "static/js/2.e4f1146a.chunk.js",
     "static/css/main.2db80502.chunk.css",
-    "static/js/main.a95885a3.chunk.js"
+    "static/js/main.856c5869.chunk.js"
   ]
 }
